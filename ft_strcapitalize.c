@@ -12,6 +12,11 @@ char *ft_strcapitalize(char *str) {
     if (*str >= ' ' || *str <= '?')
       while (*str != ' ') {
         str++;
+        if(*str >= ' ' || *str <= '?')
+        {
+          while (*str != 'a')
+          str++;
+        }
         if (*str == '\0') {
           break;
         }
